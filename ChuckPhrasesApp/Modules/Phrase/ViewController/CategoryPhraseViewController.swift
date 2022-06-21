@@ -12,6 +12,8 @@ class CategoryPhraseViewController: UIViewController {
     @IBOutlet weak var phraseLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var phraseView: UIView!
+    
     private let service = CategoryPhraseService()
     
     private var model: CategoryPhraseViewModel?
@@ -20,6 +22,8 @@ class CategoryPhraseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpInternalView()
 
         if let url = categoryPhraseUrl {
             self.model = CategoryPhraseViewModel(url: url, delegate: self, service: self.service)
@@ -27,6 +31,10 @@ class CategoryPhraseViewController: UIViewController {
             self.model?.getCategoryPhrase()
         }
         
+    }
+    
+    private func setUpInternalView() {
+        self.phraseView.setUp()
     }
 
 }

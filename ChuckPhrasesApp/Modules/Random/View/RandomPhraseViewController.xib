@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomPhraseViewController" customModule="ChuckPhrasesApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRm-ba-M05">
+                    <rect key="frame" x="83" y="523" width="248" height="50"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="r3d-Ze-q7q">
+                            <variation key="heightClass=compact-widthClass=compact" constant="35"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="35"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Get a Random Phrase">
+                        <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="bcp-2H-KBQ"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chuck-norris" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-1L-81n">
+                    <rect key="frame" x="140.5" y="74" width="133" height="133"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="133" id="nJt-3K-0St">
+                            <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="70"/>
+                        </constraint>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqZ-po-fI1">
+                    <rect key="frame" x="156.5" y="390.5" width="101" height="32.5"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.55686277149999996" green="0.86274516580000005" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="pqZ-po-fI1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Ji-UU-2iM"/>
+                <constraint firstItem="pqZ-po-fI1" firstAttribute="bottom" secondItem="mRm-ba-M05" secondAttribute="top" constant="-100" id="Baz-GY-vpm">
+                    <variation key="heightClass=compact-widthClass=compact" constant="-40"/>
+                    <variation key="heightClass=compact-widthClass=regular" constant="-60"/>
+                </constraint>
+                <constraint firstItem="mRm-ba-M05" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="100" id="Eb5-JS-Vs7"/>
+                <constraint firstItem="mRm-ba-M05" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="VRc-CJ-j6s"/>
+                <constraint firstItem="B3c-1L-81n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a8E-l0-FvF"/>
+                <constraint firstItem="B3c-1L-81n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="dLM-Kc-866">
+                    <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                </constraint>
+                <constraint firstItem="mRm-ba-M05" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dc7-RA-2vR"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chuck-norris" width="133" height="133"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
