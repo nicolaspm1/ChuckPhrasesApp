@@ -13,6 +13,10 @@
 		C10EA824285691470003B765 /* CategoryPhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA823285691470003B765 /* CategoryPhraseViewModel.swift */; };
 		C10EA827285693BD0003B765 /* CategoryPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA825285693BD0003B765 /* CategoryPhraseViewController.swift */; };
 		C10EA828285693BD0003B765 /* CategoryPhraseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10EA826285693BD0003B765 /* CategoryPhraseViewController.xib */; };
+		C13D145628611A2A000E1D30 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D145528611A2A000E1D30 /* ExtensionUIView.swift */; };
+		C13D145928611EC7000E1D30 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D145828611EC7000E1D30 /* UITabBarViewController.swift */; };
+		C13D145D286140EB000E1D30 /* RandomPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D145B286140EB000E1D30 /* RandomPhraseViewController.swift */; };
+		C13D145E286140EB000E1D30 /* RandomPhraseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13D145C286140EB000E1D30 /* RandomPhraseViewController.xib */; };
 		C1655FE6284D3A7700E2DFB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1655FE5284D3A7700E2DFB8 /* AppDelegate.swift */; };
 		C1655FE8284D3A7700E2DFB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1655FE7284D3A7700E2DFB8 /* SceneDelegate.swift */; };
 		C1655FEF284D3A7700E2DFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1655FEE284D3A7700E2DFB8 /* Assets.xcassets */; };
@@ -35,6 +39,10 @@
 		C10EA823285691470003B765 /* CategoryPhraseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPhraseViewModel.swift; sourceTree = "<group>"; };
 		C10EA825285693BD0003B765 /* CategoryPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPhraseViewController.swift; sourceTree = "<group>"; };
 		C10EA826285693BD0003B765 /* CategoryPhraseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryPhraseViewController.xib; sourceTree = "<group>"; };
+		C13D145528611A2A000E1D30 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		C13D145828611EC7000E1D30 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		C13D145B286140EB000E1D30 /* RandomPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhraseViewController.swift; sourceTree = "<group>"; };
+		C13D145C286140EB000E1D30 /* RandomPhraseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomPhraseViewController.xib; sourceTree = "<group>"; };
 		C1655FE2284D3A7700E2DFB8 /* ChuckPhrasesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckPhrasesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1655FE5284D3A7700E2DFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1655FE7284D3A7700E2DFB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +130,47 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		C13D1454286119DB000E1D30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C13D145528611A2A000E1D30 /* ExtensionUIView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C13D145728611E8B000E1D30 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C13D145828611EC7000E1D30 /* UITabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C13D145A286140B1000E1D30 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				C13D14612861410B000E1D30 /* ViewController */,
+				C13D145F286140F6000E1D30 /* View */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		C13D145F286140F6000E1D30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C13D145C286140EB000E1D30 /* RandomPhraseViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C13D14612861410B000E1D30 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C13D145B286140EB000E1D30 /* RandomPhraseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C1655FD9284D3A7700E2DFB8 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +194,7 @@
 			children = (
 				C1D059C9284D3D8A00B08F4A /* Modules */,
 				C1655FFD284D3B7800E2DFB8 /* Shared */,
+				C13D1454286119DB000E1D30 /* Utils */,
 				C1655FE5284D3A7700E2DFB8 /* AppDelegate.swift */,
 				C1655FE7284D3A7700E2DFB8 /* SceneDelegate.swift */,
 				C1655FEE284D3A7700E2DFB8 /* Assets.xcassets */,
@@ -175,8 +225,10 @@
 		C1D059C9284D3D8A00B08F4A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C10EA81A28568DD10003B765 /* Phrase */,
 				C1D059CA284D3D9200B08F4A /* Main */,
+				C10EA81A28568DD10003B765 /* Phrase */,
+				C13D145A286140B1000E1D30 /* Random */,
+				C13D145728611E8B000E1D30 /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -296,6 +348,7 @@
 				C1655FF2284D3A7700E2DFB8 /* LaunchScreen.storyboard in Resources */,
 				C1655FFC284D3AF800E2DFB8 /* MainViewController.xib in Resources */,
 				C10EA828285693BD0003B765 /* CategoryPhraseViewController.xib in Resources */,
+				C13D145E286140EB000E1D30 /* RandomPhraseViewController.xib in Resources */,
 				C1655FEF284D3A7700E2DFB8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,11 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13D145D286140EB000E1D30 /* RandomPhraseViewController.swift in Sources */,
+				C13D145628611A2A000E1D30 /* ExtensionUIView.swift in Sources */,
 				C1D059D1284D3EB500B08F4A /* CategoriesService.swift in Sources */,
 				C1D059D6284D40AA00B08F4A /* Categories.swift in Sources */,
 				C1656000284D3BA200E2DFB8 /* ApiManager.swift in Sources */,
 				C1655FFB284D3AF800E2DFB8 /* MainViewController.swift in Sources */,
 				C10EA82228568EDF0003B765 /* CategoryPhraseService.swift in Sources */,
+				C13D145928611EC7000E1D30 /* UITabBarViewController.swift in Sources */,
 				C1655FE6284D3A7700E2DFB8 /* AppDelegate.swift in Sources */,
 				C1655FE8284D3A7700E2DFB8 /* SceneDelegate.swift in Sources */,
 				C10EA82028568E610003B765 /* CategoryPhrase.swift in Sources */,
