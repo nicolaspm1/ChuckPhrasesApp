@@ -10,6 +10,10 @@ Los datos se consumen por medio de una API a través de Alamofire y usando como 
 -  API: [Chuck Norris Jokes API](https://api.chucknorris.io)
 -  IDE: XCode
 
+## Flujo de la aplicación 
+
+![Simulator Screen Recording - iPhone 13 Pro - 2022-08-13 at 00 24 11](https://user-images.githubusercontent.com/69824165/184466710-c1e90124-ac6b-48b9-91ca-f7e1b7c77356.gif)
+
 
 ## Vistas
 
