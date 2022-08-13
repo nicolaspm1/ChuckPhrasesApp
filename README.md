@@ -12,7 +12,8 @@ Los datos se consumen por medio de una API a través de Alamofire y usando como 
 
 ## Flujo de la aplicación 
 
-![Simulator Screen Recording - iPhone 13 Pro - 2022-08-13 at 00 24 11](https://user-images.githubusercontent.com/69824165/184466710-c1e90124-ac6b-48b9-91ca-f7e1b7c77356.gif)
+![Simulator Screen Recording - iPhone 13 Pro - 2022-08-13 at 00 28 49](https://user-images.githubusercontent.com/69824165/184466810-75f41249-12d3-42e9-8efd-002c2095c4f6.gif)
+
 
 
 ## Vistas
