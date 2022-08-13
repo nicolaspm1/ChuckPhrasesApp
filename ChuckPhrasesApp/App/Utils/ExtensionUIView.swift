@@ -11,7 +11,6 @@ import UIKit
 extension UIView {
     
     func setUp() {
-        
         self.layer.cornerRadius = self.layer.bounds.width / 4
         self.clipsToBounds = true
         self.layer.borderWidth = 2

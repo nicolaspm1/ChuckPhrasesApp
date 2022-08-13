@@ -16,7 +16,7 @@ class RandomPhraseViewController: UIViewController {
 
 
     @IBAction func buttonPressed(_ sender: Any) {
-        let url = Constants().randomPhrase
+        let url = K.randomPhrase
         let phraseCategoryVC = CategoryPhraseViewController()
         phraseCategoryVC.categoryPhraseUrl = url
         

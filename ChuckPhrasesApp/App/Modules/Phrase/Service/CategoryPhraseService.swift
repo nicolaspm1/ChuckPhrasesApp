@@ -7,7 +7,13 @@
 
 import Foundation
 
-class CategoryPhraseService {
+protocol CategoryPhraseServiceProtocol {
+    func getCategoryPhrase(url: String, onComplete: @escaping(CategoryPhrase) -> Void, onError: @escaping () -> Void)
+}
+
+
+
+class CategoryPhraseService: CategoryPhraseServiceProtocol {
     
     func getCategoryPhrase(url: String, onComplete: @escaping(CategoryPhrase) -> Void, onError: @escaping () -> Void) {
         

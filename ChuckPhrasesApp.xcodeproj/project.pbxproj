@@ -28,7 +28,18 @@
 		C1D059D3284D3FC800B08F4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D2284D3FC800B08F4A /* Constants.swift */; };
 		C1D059D6284D40AA00B08F4A /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D5284D40AA00B08F4A /* Categories.swift */; };
 		C1D059D8284D417600B08F4A /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D7284D417600B08F4A /* CategoriesViewModel.swift */; };
+		C1FEE22428A74326001975AA /* ChuckPhrasesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FEE22328A74326001975AA /* ChuckPhrasesAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1FEE22528A74326001975AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1655FDA284D3A7700E2DFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1655FE1284D3A7700E2DFB8;
+			remoteInfo = ChuckPhrasesApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0EFA362282D5E17A3351240F /* Pods-ChuckPhrasesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckPhrasesApp.release.xcconfig"; path = "Target Support Files/Pods-ChuckPhrasesApp/Pods-ChuckPhrasesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +67,8 @@
 		C1D059D2284D3FC800B08F4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C1D059D5284D40AA00B08F4A /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		C1D059D7284D417600B08F4A /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		C1FEE22128A74326001975AA /* ChuckPhrasesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckPhrasesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FEE22328A74326001975AA /* ChuckPhrasesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckPhrasesAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +77,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55501851EDAAD4EA3B72649E /* Pods_ChuckPhrasesApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FEE21E28A74326001975AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C1655FE4284D3A7700E2DFB8 /* ChuckPhrasesApp */,
+				C1FEE22228A74326001975AA /* ChuckPhrasesAppTests */,
 				C1655FE3284D3A7700E2DFB8 /* Products */,
 				B7BB0063A0DDFB21D665CBED /* Pods */,
 				563C7E954FCF918984076317 /* Frameworks */,
@@ -185,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				C1655FE2284D3A7700E2DFB8 /* ChuckPhrasesApp.app */,
+				C1FEE22128A74326001975AA /* ChuckPhrasesAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,9 +214,7 @@
 		C1655FE4284D3A7700E2DFB8 /* ChuckPhrasesApp */ = {
 			isa = PBXGroup;
 			children = (
-				C1D059C9284D3D8A00B08F4A /* Modules */,
-				C1655FFD284D3B7800E2DFB8 /* Shared */,
-				C13D1454286119DB000E1D30 /* Utils */,
+				C1FEE22A28A74364001975AA /* App */,
 				C1655FE5284D3A7700E2DFB8 /* AppDelegate.swift */,
 				C1655FE7284D3A7700E2DFB8 /* SceneDelegate.swift */,
 				C1655FEE284D3A7700E2DFB8 /* Assets.xcassets */,
@@ -285,6 +305,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C1FEE22228A74326001975AA /* ChuckPhrasesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1FEE22328A74326001975AA /* ChuckPhrasesAppTests.swift */,
+			);
+			path = ChuckPhrasesAppTests;
+			sourceTree = "<group>";
+		};
+		C1FEE22A28A74364001975AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1D059C9284D3D8A00B08F4A /* Modules */,
+				C1655FFD284D3B7800E2DFB8 /* Shared */,
+				C13D1454286119DB000E1D30 /* Utils */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +345,24 @@
 			productReference = C1655FE2284D3A7700E2DFB8 /* ChuckPhrasesApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1FEE22028A74326001975AA /* ChuckPhrasesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1FEE22928A74326001975AA /* Build configuration list for PBXNativeTarget "ChuckPhrasesAppTests" */;
+			buildPhases = (
+				C1FEE21D28A74326001975AA /* Sources */,
+				C1FEE21E28A74326001975AA /* Frameworks */,
+				C1FEE21F28A74326001975AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1FEE22628A74326001975AA /* PBXTargetDependency */,
+			);
+			name = ChuckPhrasesAppTests;
+			productName = ChuckPhrasesAppTests;
+			productReference = C1FEE22128A74326001975AA /* ChuckPhrasesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -314,11 +370,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					C1655FE1284D3A7700E2DFB8 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					C1FEE22028A74326001975AA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C1655FE1284D3A7700E2DFB8;
 					};
 				};
 			};
@@ -336,6 +396,7 @@
 			projectRoot = "";
 			targets = (
 				C1655FE1284D3A7700E2DFB8 /* ChuckPhrasesApp */,
+				C1FEE22028A74326001975AA /* ChuckPhrasesAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,6 +411,13 @@
 				C10EA828285693BD0003B765 /* CategoryPhraseViewController.xib in Resources */,
 				C13D145E286140EB000E1D30 /* RandomPhraseViewController.xib in Resources */,
 				C1655FEF284D3A7700E2DFB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FEE21F28A74326001975AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +488,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1FEE21D28A74326001975AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1FEE22428A74326001975AA /* ChuckPhrasesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1FEE22628A74326001975AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1655FE1284D3A7700E2DFB8 /* ChuckPhrasesApp */;
+			targetProxy = C1FEE22528A74326001975AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C1655FF0284D3A7700E2DFB8 /* LaunchScreen.storyboard */ = {
@@ -610,6 +694,44 @@
 			};
 			name = Release;
 		};
+		C1FEE22728A74326001975AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B343RB5PHC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.ChuckPhrasesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChuckPhrasesApp.app/ChuckPhrasesApp";
+			};
+			name = Debug;
+		};
+		C1FEE22828A74326001975AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B343RB5PHC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pablo.ChuckPhrasesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChuckPhrasesApp.app/ChuckPhrasesApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -627,6 +749,15 @@
 			buildConfigurations = (
 				C1655FF7284D3A7700E2DFB8 /* Debug */,
 				C1655FF8284D3A7700E2DFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1FEE22928A74326001975AA /* Build configuration list for PBXNativeTarget "ChuckPhrasesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1FEE22728A74326001975AA /* Debug */,
+				C1FEE22828A74326001975AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
