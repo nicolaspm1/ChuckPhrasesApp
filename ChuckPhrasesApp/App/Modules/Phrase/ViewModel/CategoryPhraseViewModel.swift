@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CategoryPhraseDelegate {
+protocol CategoryPhraseDelegate: AnyObject {
     func toggleLoading()
     func loadDataInVC(categoryPhrase: CategoryPhrase)
     func showError()
@@ -16,26 +16,24 @@ protocol CategoryPhraseDelegate {
 
 class CategoryPhraseViewModel {
     
-    private var delegate: CategoryPhraseDelegate
-    private var service: CategoryPhraseService
+    weak var delegate: CategoryPhraseDelegate?
+    private var service: CategoryPhraseServiceProtocol
     private var url: String
     
     
-    init(url: String, delegate: CategoryPhraseDelegate, service: CategoryPhraseService) {
-        
+    init(url: String, service: CategoryPhraseServiceProtocol = CategoryPhraseService()) {
         self.url = url
-        self.delegate = delegate
         self.service = service
     }
     
     
     func getCategoryPhrase() {
-        self.delegate.toggleLoading()
+        self.delegate?.toggleLoading()
         service.getCategoryPhrase(url: self.url, onComplete: { categoryPhrase in
-            self.delegate.loadDataInVC(categoryPhrase: categoryPhrase)
+            self.delegate?.loadDataInVC(categoryPhrase: categoryPhrase)
             
         }, onError: {
-            self.delegate.showError()
+            self.delegate?.showError()
         })
     }
     

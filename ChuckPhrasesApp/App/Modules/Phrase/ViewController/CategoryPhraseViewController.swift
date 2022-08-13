@@ -14,20 +14,18 @@ class CategoryPhraseViewController: UIViewController {
     
     @IBOutlet weak var phraseView: UIView!
     
-    private let service = CategoryPhraseService()
-    
+
     private var model: CategoryPhraseViewModel?
     
     var categoryPhraseUrl: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpInternalView()
 
         if let url = categoryPhraseUrl {
-            self.model = CategoryPhraseViewModel(url: url, delegate: self, service: self.service)
-            
+            self.model = CategoryPhraseViewModel(url: url)
+            self.model?.delegate = self
             self.model?.getCategoryPhrase()
         }
         
@@ -49,6 +47,11 @@ extension CategoryPhraseViewController: CategoryPhraseDelegate {
     
     func loadDataInVC(categoryPhrase: CategoryPhrase) {
         DispatchQueue.main.async {
+            
+            if categoryPhrase.value.count > 100 {
+                self.phraseLabel.sizeToFit()
+            }
+            
             self.phraseLabel.text = categoryPhrase.value
             self.activityIndicator.stopAnimating()
             self.activityIndicator.isHidden = true

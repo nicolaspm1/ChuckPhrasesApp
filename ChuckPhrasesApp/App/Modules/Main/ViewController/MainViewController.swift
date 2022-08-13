@@ -9,32 +9,38 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var getJokeButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var categoriesPicker: UIPickerView!
     
-    private let categoriesService = CategoriesService()
     private var categoriesViewModel: CategoriesViewModel?
     
     private var valueSelected: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUp()
-        self.categoriesViewModel = CategoriesViewModel(service: categoriesService, delegate: self)
+        setupView()
+        setDelegates()
+        self.categoriesViewModel = CategoriesViewModel()
+        self.categoriesViewModel?.delegate = self
         self.categoriesViewModel?.getCategories()
        
     }
 
 
-    private func setUp() {
+    private func setDelegates() {
         categoriesPicker.delegate = self
         categoriesPicker.dataSource = self
         
     }
     
+    private func setupView() {
+        getJokeButton.tintColor = .red
+    }
+    
   
     @IBAction func buttonPressed(_ sender: Any) {
-        let url = Constants().randonCategoryPhraseUrl
+        let url = K.randonCategoryPhraseUrl
         let phraseCategoryVC = CategoryPhraseViewController()
         phraseCategoryVC.categoryPhraseUrl = "\(url)\(String(describing: valueSelected!))"
         

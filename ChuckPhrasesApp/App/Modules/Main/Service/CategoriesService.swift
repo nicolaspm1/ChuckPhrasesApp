@@ -8,13 +8,16 @@
 import Foundation
 
 
+protocol CategoriesServiceProtocol{
+    func getCategories(onComplete: @escaping([String]) -> Void, onError: @escaping()-> Void)
+}
 
 
-class CategoriesService {
+class CategoriesService: CategoriesServiceProtocol {
     
     func getCategories(onComplete: @escaping([String]) -> Void, onError: @escaping()-> Void){
         
-        ApiManager.shared.get(url: Constants().categoriesUrl) { response in
+        ApiManager.shared.get(url: K.categoriesUrl) { response in
             
             switch response {
                 case .success(let data):

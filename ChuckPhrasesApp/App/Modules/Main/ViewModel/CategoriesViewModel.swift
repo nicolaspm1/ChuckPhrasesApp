@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-protocol CategoriesDelegate {
+protocol CategoriesDelegate: AnyObject {
     func toggleLoading()
     func reloadData()
     func showError()
@@ -16,22 +17,21 @@ protocol CategoriesDelegate {
 class CategoriesViewModel {
     
     private var categories = [String]()
-    private let delegate: CategoriesDelegate
-    private let service: CategoriesService
+    weak var delegate: CategoriesDelegate?
+    private let service: CategoriesServiceProtocol
     
-    init(service: CategoriesService, delegate: CategoriesDelegate) {
+    init(service: CategoriesServiceProtocol = CategoriesService()) {
         self.service = service
-        self.delegate = delegate
     }
     
     
     func getCategories() {
         self.service.getCategories { categories in
             self.categories = categories
-            self.delegate.toggleLoading()
-            self.delegate.reloadData()
+            self.delegate?.toggleLoading()
+            self.delegate?.reloadData()
         } onError: {
-            self.delegate.showError()
+            self.delegate?.showError()
         }
 
     }
