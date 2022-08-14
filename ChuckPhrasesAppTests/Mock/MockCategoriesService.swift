@@ -10,8 +10,19 @@ import Foundation
 
 class MockCategoriesService:CategoriesServiceProtocol {
     func getCategories(onComplete: @escaping ([String]) -> Void, onError: @escaping () -> Void) {
-        print("")
+        
+        let url = Bundle.main.url(forResource: "MockCategories", withExtension: "json")
+        
+        do {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let jsonData = try Data(contentsOf: url!)
+            let model = try decoder.decode(Categories.self, from: jsonData)
+            onComplete(model)
+            
+        } catch _ {
+            onError()
+        }
+        
     }
-    
-    
 }
