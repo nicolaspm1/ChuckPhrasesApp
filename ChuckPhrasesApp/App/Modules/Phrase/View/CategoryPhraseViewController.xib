@@ -68,6 +68,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.55686277149999996" green="0.86274516580000005" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="5ir-lU-SkJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="2JD-Sn-iQn"/>
+                <constraint firstItem="5ir-lU-SkJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="AdT-Ky-HEt"/>
                 <constraint firstItem="5ir-lU-SkJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="FEc-HP-RHS">
                     <variation key="heightClass=compact-widthClass=compact" constant="40"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="50"/>
@@ -78,14 +80,6 @@
                 <constraint firstItem="YAt-6m-yla" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="YZk-cJ-zNJ">
                     <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="10"/>
-                </constraint>
-                <constraint firstItem="5ir-lU-SkJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="adk-Rg-7Nv">
-                    <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                    <variation key="heightClass=compact-widthClass=regular" constant="100"/>
-                </constraint>
-                <constraint firstItem="5ir-lU-SkJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-50" id="oiA-Rb-ymv">
-                    <variation key="heightClass=compact-widthClass=compact" constant="-100"/>
-                    <variation key="heightClass=compact-widthClass=regular" constant="-100"/>
                 </constraint>
                 <constraint firstItem="YAt-6m-yla" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rAL-ah-Fg7"/>
                 <constraint firstItem="5ir-lU-SkJ" firstAttribute="height" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="wCn-j6-ykQ"/>

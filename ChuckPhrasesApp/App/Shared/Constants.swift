@@ -8,7 +8,7 @@
 import Foundation
 
 struct KBaseUrl {
-    static let baseUrl = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as! String
+    static let baseUrl = Bundle.main.object(forInfoDictionaryKey: "BaseUrl") as! String
 }
 
 
