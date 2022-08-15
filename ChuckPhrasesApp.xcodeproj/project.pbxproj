@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		55501851EDAAD4EA3B72649E /* Pods_ChuckPhrasesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94210BF433111B68D7987747 /* Pods_ChuckPhrasesApp.framework */; };
 		C107F87D28A996AE0038079C /* MockCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C107F87C28A996AE0038079C /* MockCategoriesService.swift */; };
-		C107F88128A99C990038079C /* MockCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = C107F88028A99C990038079C /* MockCategories.json */; };
+		C107F88428A9A0B80038079C /* TestCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C107F88328A9A0B80038079C /* TestCategoriesViewModel.swift */; };
 		C10EA82028568E610003B765 /* CategoryPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA81F28568E610003B765 /* CategoryPhrase.swift */; };
 		C10EA82228568EDF0003B765 /* CategoryPhraseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA82128568EDF0003B765 /* CategoryPhraseService.swift */; };
 		C10EA824285691470003B765 /* CategoryPhraseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10EA823285691470003B765 /* CategoryPhraseViewModel.swift */; };
@@ -26,6 +26,7 @@
 		C1655FFB284D3AF800E2DFB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1655FF9284D3AF800E2DFB8 /* MainViewController.swift */; };
 		C1655FFC284D3AF800E2DFB8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1655FFA284D3AF800E2DFB8 /* MainViewController.xib */; };
 		C1656000284D3BA200E2DFB8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1655FFF284D3BA200E2DFB8 /* ApiManager.swift */; };
+		C177303028AADF12009EA130 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = C177302F28AADF12009EA130 /* Mock.json */; };
 		C1D059D1284D3EB500B08F4A /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D0284D3EB500B08F4A /* CategoriesService.swift */; };
 		C1D059D3284D3FC800B08F4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D2284D3FC800B08F4A /* Constants.swift */; };
 		C1D059D6284D40AA00B08F4A /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D059D5284D40AA00B08F4A /* Categories.swift */; };
@@ -48,7 +49,7 @@
 		68E0F9DD3009D186C110E712 /* Pods-ChuckPhrasesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckPhrasesApp.debug.xcconfig"; path = "Target Support Files/Pods-ChuckPhrasesApp/Pods-ChuckPhrasesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94210BF433111B68D7987747 /* Pods_ChuckPhrasesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckPhrasesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C107F87C28A996AE0038079C /* MockCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCategoriesService.swift; sourceTree = "<group>"; };
-		C107F88028A99C990038079C /* MockCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockCategories.json; sourceTree = "<group>"; };
+		C107F88328A9A0B80038079C /* TestCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCategoriesViewModel.swift; sourceTree = "<group>"; };
 		C10EA81F28568E610003B765 /* CategoryPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPhrase.swift; sourceTree = "<group>"; };
 		C10EA82128568EDF0003B765 /* CategoryPhraseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPhraseService.swift; sourceTree = "<group>"; };
 		C10EA823285691470003B765 /* CategoryPhraseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPhraseViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		C1655FF9284D3AF800E2DFB8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C1655FFA284D3AF800E2DFB8 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C1655FFF284D3BA200E2DFB8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C177302F28AADF12009EA130 /* Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
 		C1D059D0284D3EB500B08F4A /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
 		C1D059D2284D3FC800B08F4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C1D059D5284D40AA00B08F4A /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				C107F87C28A996AE0038079C /* MockCategoriesService.swift */,
-				C107F88028A99C990038079C /* MockCategories.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -227,6 +228,7 @@
 		C1655FE4284D3A7700E2DFB8 /* ChuckPhrasesApp */ = {
 			isa = PBXGroup;
 			children = (
+				C177302E28AADE53009EA130 /* Mock */,
 				C1FEE22A28A74364001975AA /* App */,
 				C1655FE5284D3A7700E2DFB8 /* AppDelegate.swift */,
 				C1655FE7284D3A7700E2DFB8 /* SceneDelegate.swift */,
@@ -253,6 +255,14 @@
 				C1655FFF284D3BA200E2DFB8 /* ApiManager.swift */,
 			);
 			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		C177302E28AADE53009EA130 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C177302F28AADF12009EA130 /* Mock.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		C1D059C9284D3D8A00B08F4A /* Modules */ = {
@@ -323,6 +333,7 @@
 			children = (
 				C107F87B28A996890038079C /* Mock */,
 				C1FEE22328A74326001975AA /* ChuckPhrasesAppTests.swift */,
+				C107F88328A9A0B80038079C /* TestCategoriesViewModel.swift */,
 			);
 			path = ChuckPhrasesAppTests;
 			sourceTree = "<group>";
@@ -423,6 +434,7 @@
 				C1655FF2284D3A7700E2DFB8 /* LaunchScreen.storyboard in Resources */,
 				C1655FFC284D3AF800E2DFB8 /* MainViewController.xib in Resources */,
 				C10EA828285693BD0003B765 /* CategoryPhraseViewController.xib in Resources */,
+				C177303028AADF12009EA130 /* Mock.json in Resources */,
 				C13D145E286140EB000E1D30 /* RandomPhraseViewController.xib in Resources */,
 				C1655FEF284D3A7700E2DFB8 /* Assets.xcassets in Resources */,
 			);
@@ -432,7 +444,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C107F88128A99C990038079C /* MockCategories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +520,7 @@
 			files = (
 				C1FEE22428A74326001975AA /* ChuckPhrasesAppTests.swift in Sources */,
 				C107F87D28A996AE0038079C /* MockCategoriesService.swift in Sources */,
+				C107F88428A9A0B80038079C /* TestCategoriesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

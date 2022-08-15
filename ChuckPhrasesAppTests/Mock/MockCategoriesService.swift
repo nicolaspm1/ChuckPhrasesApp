@@ -11,7 +11,7 @@ import Foundation
 class MockCategoriesService:CategoriesServiceProtocol {
     func getCategories(onComplete: @escaping ([String]) -> Void, onError: @escaping () -> Void) {
         
-        let url = Bundle.main.url(forResource: "MockCategories", withExtension: "json")
+        let url = Bundle.main.url(forResource: "Mock", withExtension: "json")
         
         do {
             let decoder = JSONDecoder()

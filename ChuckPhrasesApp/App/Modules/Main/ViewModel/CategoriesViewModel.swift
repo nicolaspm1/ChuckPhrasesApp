@@ -18,7 +18,7 @@ class CategoriesViewModel {
     
     private var categories = [String]()
     weak var delegate: CategoriesDelegate?
-    private let service: CategoriesServiceProtocol
+    let service: CategoriesServiceProtocol
     
     init(service: CategoriesServiceProtocol = CategoriesService()) {
         self.service = service
